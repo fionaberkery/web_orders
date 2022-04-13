@@ -12,9 +12,13 @@
     </h1>
     {% for order in orders %}
     <div>
-        <p>
-            {{ order.customer_name}}: {{ order.order_date}}, {{order.quantity}}, {{order.book_title}}
-        </p>
+        <ul>
+            <li>
+                <a href="order.html">
+                    {{ order.customer_name}}
+                </a>
+            </li>
+        </ul>
     </div>
     {% endfor %}
 </body>
