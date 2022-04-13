@@ -14,8 +14,7 @@
     <div>
         <ul>
             <li>
-                <a href="order.html">
-                    {{ order.customer_name}}
+                <a href="/order/{{orders.index(order)}}"> Show Order {{ order.customer_name}}
                 </a>
             </li>
         </ul>
@@ -23,3 +22,5 @@
     {% endfor %}
 </body>
 </html>
+
+
